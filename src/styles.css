@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-form-field {
+    width: 100%;
+}
+
+.card-title {
+    font-size: 22px;
+    opacity: .8;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mat-table {
+    overflow: auto;
+}
+
+.mat-table table {
+    width: 100%;
+}
+
+.mat-table table tbody tr td,
+.mat-table table thead tr th {
+    white-space: nowrap;
+    padding: 0px 10px;
+}
+
+.btns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+}

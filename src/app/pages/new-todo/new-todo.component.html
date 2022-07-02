@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-card-content [formGroup]="toDoForm">
+        <div class="card-title">Nueva tarea</div>
+        
+        <mat-form-field>
+            <mat-label>Título</mat-label>
+            <input matInput formControlName="title" type="text" autocomplete="off" spellcheck="false">
+            <mat-error *ngIf="titleError"> {{titleErrorMsg }} </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Descripción</mat-label>
+            <textarea matInput formControlName="description" autocomplete="off" spellcheck="false"></textarea>
+            <mat-error *ngIf="descriptionError"> {{ descriptionErrorMsg }} </mat-error>
+        </mat-form-field>
+    </mat-card-content>
+
+    <div class="btns-container">
+        <button mat-stroked-button type="button" (click)="resetForm()">Cancelar</button>
+        <button mat-flat-button color="primary" type="button" (click)="newToDo()">Guardar</button>
+    </div>
+</mat-card>

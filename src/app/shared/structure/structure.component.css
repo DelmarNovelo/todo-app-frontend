@@ -1,0 +1,33 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.content {
+  margin: 15px 0px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mat-drawer-container {
+  flex: 1;
+}
+
+.mat-drawer-container .mat-drawer {
+  width: 200px;
+}
+
+.mat-drawer-container .mat-drawer .mat-nav-list {
+  padding: 0px !important;
+}
+
+.mat-drawer-content {
+  flex: 1 0 auto;
+}
