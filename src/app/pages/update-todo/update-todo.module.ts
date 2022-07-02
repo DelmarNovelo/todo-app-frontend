@@ -29,7 +29,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatSlideToggleModule,
     MatSnackBarModule,
-    MatIconModule
+    MatIconModule,
+    
   ]
 })
 export class UpdateTodoModule { }

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { QuicklinkModule} from 'ngx-quicklink';
+import { LoggerModule, NgxLoggerLevel } from "ngx-logger";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,12 @@ import { QuicklinkModule} from 'ngx-quicklink';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    QuicklinkModule
+    QuicklinkModule,
+    LoggerModule.forRoot({
+      serverLoggingUrl: '/api/logs',
+      level: NgxLoggerLevel.DEBUG,
+      serverLogLevel: NgxLoggerLevel.ERROR
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { MatDrawerMode } from '@angular/material/sidenav';
 import { Subject } from 'rxjs';
-import { IRouterData } from 'src/app/interfaces/router-data.interface';
 
 @Component({
   selector: 'app-structure',
@@ -10,7 +9,6 @@ import { IRouterData } from 'src/app/interfaces/router-data.interface';
 })
 export class StructureComponent implements OnInit {
 
-  routerData: IRouterData = {};
   unsubscribe$ = new Subject();
   opened = false;
   mode: MatDrawerMode = 'side';
@@ -25,11 +23,13 @@ export class StructureComponent implements OnInit {
     this.opened = !this.opened;
   }
   
+  /* Escucha el evento resize para adaptar el sidenav */
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.verifyScreenWidth();
   }
 
+  /* Adapta el sidenav dependiendo del ancho de la pantalla del dispositovo */
   verifyScreenWidth() {
     if (innerWidth < 767) {
       this.opened = false;

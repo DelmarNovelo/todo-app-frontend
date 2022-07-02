@@ -10,7 +10,6 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { BreadcumbComponent } from './breadcumb/breadcumb.component';
 
 
 @NgModule({
@@ -18,7 +17,6 @@ import { BreadcumbComponent } from './breadcumb/breadcumb.component';
     StructureComponent,
     ToolbarComponent,
     SidenavComponent,
-    BreadcumbComponent
   ],
   imports: [
     CommonModule,

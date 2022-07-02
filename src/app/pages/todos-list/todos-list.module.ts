@@ -10,6 +10,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RemoveTodoModule } from 'src/app/dialogs/remove-todo/remove-todo.module';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { RemoveTodoModule } from 'src/app/dialogs/remove-todo/remove-todo.module
     MatInputModule,
     MatButtonModule,
     MatIconModule,
+    MatMenuModule,
+    MatSnackBarModule
   ]
 })
 export class TodosListModule { }

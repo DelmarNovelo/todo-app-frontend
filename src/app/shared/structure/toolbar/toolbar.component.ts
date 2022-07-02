@@ -14,6 +14,7 @@ export class ToolbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /* Emite el evento que hace el toggle del sidenav */
   toggleSidenav() {
     this.toggleSidenavEvent.emit();
   }
